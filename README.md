@@ -1,95 +1,93 @@
-# Intelligent ISAC-Based Drone Detection & Tracking
+# 🚁 Intelligent ISAC-Based Drone Detection & Tracking
 
-> From radar signals to real-time drone intelligence — detect, localize, track, and predict.
+> **From wireless signals to real-time aerial intelligence — Detect • Localize • Track • Predict**
 
-## 🚀 Overview
+## 🌐 Overview
 
-This project is an **Integrated Sensing and Communication (ISAC)-based radar system** for real-time drone detection, localization, tracking, and motion prediction.
+An **Integrated Sensing and Communication (ISAC)** based system that transforms modern wireless signals into a real-time **drone detection and tracking platform**.
 
-The system combines **OFDM-based Angle of Arrival (AoA)** with **two-tone Range-Doppler sensing** to estimate the three key parameters of a target:
+Inspired by emerging **5G/6G wireless sensing technologies**, the system combines **OFDM-based sensing, Doppler processing, signal analysis, and intelligent state estimation** to determine:
 
-**Angle • Distance • Velocity**
+**📐 Angle • 📏 Distance • ⚡ Velocity**
 
-Because real-world radar measurements are noisy and fluctuate over time, **Kalman filtering** is used to stabilize the measurements and estimate the target's motion state. The system further uses the filtered state for **short-term trajectory prediction** and displays the results through a real-time dashboard.
+The processed measurements are continuously analyzed to track target motion, reduce measurement fluctuations, and provide **short-term trajectory prediction** through an interactive real-time dashboard.
 
 ---
 
-## 🎯 What the System Does
+## ⚙️ How It Works
 
 ```text
-        Radar / SDR Signals
-                │
-        ┌───────┴────────┐
-        ▼                ▼
-   OFDM Waveform    Two-Tone Waveform
-        │                │
-        ▼                ▼
-   AoA Estimation   Range + Doppler
-        │                │
-        │                ▼
-        │          Velocity Estimation
-        │                │
-        └───────┬────────┘
-                ▼
-         Kalman Filtering
-                │
-                ▼
-       Target State Estimate
-                │
-                ▼
-       Motion Prediction
-                │
-                ▼
-       Real-Time Dashboard
+              📡 Wireless / SDR Signals
+                       │
+              ┌────────┴────────┐
+              ▼                 ▼
+        OFDM-Based Sensing   Doppler Sensing
+              │                 │
+              ▼                 ▼
+        Angle Estimation    Range & Velocity
+              │                 │
+              └────────┬────────┘
+                       ▼
+              Intelligent Tracking
+                       │
+                       ▼
+              Motion Prediction
+                       │
+                       ▼
+              📊 Real-Time Dashboard
 ```
 
 ---
 
-## 🔬 Core Technologies
+## 🔥 Key Features
 
-| Parameter       | Method                      |
-| --------------- | --------------------------- |
-| Angle           | OFDM-based AoA Estimation   |
-| Distance        | Two-Tone Range Estimation   |
-| Velocity        | Doppler Processing          |
-| Noise Reduction | Kalman Filter               |
-| Tracking        | Sequential State Estimation |
-| Prediction      | Future Motion Estimation    |
-| Visualization   | Real-Time Dashboard         |
-
----
-
-## 💡 Why It Matters
-
-Traditional detection can answer **"Is there a drone?"**
-
-Our approach aims to answer:
-
-**"Where is it, how fast is it moving, and where is it likely to go next?"**
-
-Combining **Angle + Distance + Velocity** provides a richer understanding of target motion, while Kalman filtering improves stability in noisy sensing environments.
-
-### Potential Applications
-
-* 🛡️ Airspace & perimeter security
-* 🚁 Drone detection and monitoring
-* 🏭 Critical infrastructure protection
-* 👁️ Autonomous surveillance
-* 🤖 Robotic and intelligent sensing systems
+* 📡 **5G/6G-inspired ISAC sensing**
+* 📐 Real-time **Angle of Arrival (AoA)** estimation
+* 📏 **Distance / range** estimation
+* ⚡ **Velocity / Doppler** estimation
+* 🧠 Intelligent measurement stabilization
+* 🎯 Continuous target tracking
+* 🔮 Short-term trajectory prediction
+* 📊 Interactive real-time visualization
+* 💻 SDR-compatible sensing architecture
 
 ---
 
-## 📊 Real-Time Monitoring
+## 🧩 Technology Stack
 
-The dashboard provides an intuitive view of:
+**Wireless Sensing** → OFDM • ISAC • 5G/6G Concepts
+**Signal Processing** → Doppler • Phase • Frequency Analysis
+**Tracking** → State Estimation • Motion Modeling • Prediction
+**Hardware** → SDR / Radar Sensing
+**Visualization** → Python • Real-Time Dashboard
 
-* Current and filtered angle
-* Distance and filtered distance
-* Velocity and filtered velocity
-* Measurement/signal quality
-* Target tracking
-* Future-state prediction
-* Real-time graphs
+---
+
+## 🎯 Why ISAC?
+
+Traditional wireless communication primarily focuses on **connecting devices**.
+
+**ISAC adds another dimension — sensing the environment using wireless signals.**
+
+This enables a single wireless infrastructure to potentially support both:
+
+```text
+📶 COMMUNICATION  +  📡 SENSING
+         ↓
+     🧠 INTELLIGENCE
+```
+
+Making ISAC a promising technology for **next-generation 5G/6G networks, autonomous systems, smart infrastructure, and aerial monitoring**.
+
+---
+
+## 📊 Real-Time Intelligence
+
+The dashboard provides a live view of:
+
+**Angle | Distance | Velocity | Target Status | Tracking | Prediction | Signal Information**
+
+allowing raw sensing data to be converted into an intuitive picture of **target behavior and movement**.
 
 ---
 
@@ -98,19 +96,17 @@ The dashboard provides an intuitive view of:
 ```text
 ETH_Hackathon/
 │
-├── main.kalman.py     # Main launcher
-├── aoa_kalman.py      # AoA estimation & Kalman tracking
-├── dv_kalman.py       # Distance/Velocity & Kalman tracking
+├── main.kalman.py      # Main launcher
+├── aoa_kalman.py       # Angle sensing & tracking
+├── dv_kalman.py        # Distance/velocity sensing & tracking
 └── README.md
 ```
 
-### Running the Project
+### ▶️ Run
 
 ```bash
 python main.kalman.py
 ```
-
-Select:
 
 ```text
 1 → Angle of Arrival
@@ -121,26 +117,23 @@ Select:
 
 ## 🚀 Future Scope
 
-The current system establishes the foundation for a complete **multi-parameter drone tracking platform**.
-
-Future development includes:
-
-* Unified AoA + Range + Velocity sensor fusion
-* 2D/3D drone trajectory visualization
-* Multi-target tracking
-* Advanced filtering using EKF/UKF
-* Adaptive target detection
-* Predictive threat analysis
-* Real-time hardware/SDR deployment
+* 🔗 Multi-parameter **sensor fusion**
+* 🌐 2D/3D drone trajectory visualization
+* 🎯 Multi-target tracking
+* 🧠 Advanced adaptive tracking
+* 📡 Real-time SDR deployment
+* 🔮 Predictive aerial threat analysis
+* 📶 Integration with future **5G/6G ISAC networks**
 
 ---
 
-## 🏆 Project Vision
+## 🏆 Vision
 
-The ultimate goal is to transform raw radar measurements into **reliable and predictive aerial situational awareness**:
+> **Turn wireless signals into actionable aerial intelligence.**
 
 ```text
-DETECT → LOCALIZE → TRACK → FILTER → PREDICT
+DETECT → LOCALIZE → TRACK → ANALYZE → PREDICT
 ```
 
-A step toward intelligent radar systems that don't just detect drones — **they understand and anticipate their movement.**
+**Building toward intelligent, real-time and next-generation wireless sensing systems.**
+tems that don't just detect drones — **they understand and anticipate their movement.**
