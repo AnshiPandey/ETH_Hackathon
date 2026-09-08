@@ -6,11 +6,11 @@
 
 An **Integrated Sensing and Communication (ISAC)** based system that transforms modern wireless signals into a real-time **drone detection and tracking platform**.
 
-Inspired by emerging **5G/6G wireless sensing technologies**, the system combines **OFDM-based sensing, Doppler processing, signal analysis, and intelligent state estimation** to determine:
+Inspired by emerging **5G wireless sensing technologies**, the system combines **OFDM-based sensing, Doppler processing, signal analysis, and intelligent state estimation** to determine:
 
 **📐 Angle • 📏 Distance • ⚡ Velocity**
 
-The processed measurements are continuously analyzed to track target motion, reduce measurement fluctuations, and provide **short-term trajectory prediction** through an interactive real-time dashboard.
+The processed measurements are continuously analyzed to track target motion, reduce measurement fluctuations, and provide short-term trajectory prediction through an interactive real-time dashboard.
 
 ---
 
@@ -41,7 +41,7 @@ The processed measurements are continuously analyzed to track target motion, red
 
 ## 🔥 Key Features
 
-* 📡 **5G/6G-inspired ISAC sensing**
+* 📡 5G-inspired ISAC sensing
 * 📐 Real-time **Angle of Arrival (AoA)** estimation
 * 📏 **Distance / range** estimation
 * ⚡ **Velocity / Doppler** estimation
@@ -55,7 +55,7 @@ The processed measurements are continuously analyzed to track target motion, red
 
 ## 🧩 Technology Stack
 
-**Wireless Sensing** → OFDM • ISAC • 5G/6G Concepts
+**Wireless Sensing** → OFDM • ISAC • 5G Concepts
 **Signal Processing** → Doppler • Phase • Frequency Analysis
 **Tracking** → State Estimation • Motion Modeling • Prediction
 **Hardware** → SDR / Radar Sensing
@@ -65,7 +65,7 @@ The processed measurements are continuously analyzed to track target motion, red
 
 ## 🎯 Why ISAC?
 
-Traditional wireless communication primarily focuses on **connecting devices**.
+Traditional wireless communication primarily focuses on connecting devices.
 
 **ISAC adds another dimension — sensing the environment using wireless signals.**
 
@@ -77,7 +77,7 @@ This enables a single wireless infrastructure to potentially support both:
      🧠 INTELLIGENCE
 ```
 
-Making ISAC a promising technology for **next-generation 5G/6G networks, autonomous systems, smart infrastructure, and aerial monitoring**.
+Making ISAC a promising technology for **next-generation 5G networks, autonomous systems, smart infrastructure, and aerial monitoring**.
 
 ---
 
@@ -87,7 +87,7 @@ The dashboard provides a live view of:
 
 **Angle | Distance | Velocity | Target Status | Tracking | Prediction | Signal Information**
 
-allowing raw sensing data to be converted into an intuitive picture of **target behavior and movement**.
+allowing raw sensing data to be converted into an intuitive picture of target behavior and movement.
 
 ---
 
@@ -117,13 +117,13 @@ python main.kalman.py
 
 ## 🚀 Future Scope
 
-* 🔗 Multi-parameter **sensor fusion**
+* 🔗 Multi-parameter sensor fusion
 * 🌐 2D/3D drone trajectory visualization
 * 🎯 Multi-target tracking
 * 🧠 Advanced adaptive tracking
 * 📡 Real-time SDR deployment
 * 🔮 Predictive aerial threat analysis
-* 📶 Integration with future **5G/6G ISAC networks**
+* 📶 Integration with future 5G/6G ISAC networks
 
 ---
 
